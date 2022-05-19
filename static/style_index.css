@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+body { font-family: 'Lobster', cursive; margin: 0; padding: 0; }
+.full-screen { width: 100vw; min-height: 100vh; }
+.flex-center { display: flex; flex-direction: column; justify-content: center; align-items: center; }
+.text-xl { font-size: 4rem; }
+
+.btn {
+    padding: 10px 40px;
+    background-color: #0a0a0a;
+    color: #FFFFFF;
+    font-style: oblique;
+    font-weight: bold;
+    border-radius: 10px;
+    display: flex; flex-direction:row; justify-content: center; align-items: center;
+}
