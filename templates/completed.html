@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thanks for the compliant</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style_index.css') }}" />
+</head>
+
+<body class="full-screen flex-center">
+  <h1 class="text-xl">Thanks for the Reporting Case</h1><br><br>
+  <a href="{{ url_for('logout') }}" class="btn">Logout</a>
+
+</body>
+
+</html>
+{% endblock %}

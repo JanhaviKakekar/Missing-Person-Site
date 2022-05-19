@@ -1,0 +1,42 @@
+<!-- Store this code in 'register.html' file inside the 'templates' folder -->
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Register Complaint</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='homestyle.css') }}">			
+	</head>
+	<body></br></br></br></br></br>
+		<div align="center">
+		<div align="center" class="border">
+			<div class="header">
+				<h1 class="word">Register Complaint</h1>
+			</div></br></br></br>
+			<h2 class="word">
+				<form action="{{ url_for('completed') }}" method="post">
+				<div class="msg">{{ msg }}</div>
+					<input id="name" name="name" type="text"  pattern="^\D*$" max="25"placeholder=" Full Name" class="textbox"
+					/></br></br>
+					<input id="age" name="age" type="number"  placeholder="Age" min="1" max="125"class="textbox" required /></br></br>
+					<select id="gender" name="gender"  placeholder="Gender" class="textbox" required>
+						<option disabled="disabled" selected="selected">Gender</option>
+						<option value ="Male">Male</option> 
+						<option value ="Female">Female</option>
+						<option value ="Others">Others</option></select></br></br>
+					<!-- <input id="missingdate" name="missingdate" type="date" placeholder="Enter Your Missing Date " class="textbox"/></br></br> -->
+					<input id="lastseen" required name="seen" type="text" placeholder=" Last seen  " class="textbox" required/></br></br>
+					<input id="height" name="height" type="number" placeholder="Height in cm" class="textbox" min="1" pattern="[0-9]" required/></br></br>
+					<input id="weight" name="weight" type="number" placeholder="Weight In Kg " class="textbox" min="1" pattern="[0-9]" required/></br></br>
+					<input id="marks" name="marks" type="text" pattern="^\D*$" max="25" placeholder=" Marks " class="textbox" required
+			        /></br></br>
+					<input id="comp" name="comp" type="text" pattern="^\D*$" max="25" placeholder=" Complexion " class="textbox" required
+					/></br></br>
+				    <!-- <input id="status" name="status" type="text" placeholder=" Missing " class="textbox"/></br></br> -->
+					<input type="submit" class="btn" value="Submit"></br>
+				</form>
+			</h2>
+			<!-- <p class="bottom">Already have an account? <a class="bottom" href="{{url_for('login')}}"> Sign In here</a></p> -->
+		</div>
+		</div>
+	</body>
+</html>
